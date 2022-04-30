@@ -1,0 +1,61 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* GAME BOARD 
+/*******************************************/
+
+#gameBoard{
+     text-align: center;
+     font-family: "Permanent Marker", cursive;
+}
+
+#cellGrid{
+     display: grid;
+     grid-template-columns: repeat(3, auto);
+     width: 225px;
+     margin: auto;
+}
+
+.cell{
+     height: 75px;
+     width: 75px;
+     border: 2px solid;
+     box-shadow: 0 0 0 2px;
+     font-size: 50px;
+     line-height: 75px;
+     user-select: none;
+}
+
+.cell:hover{
+     cursor: pointer;
+     background-color: #D6D6D6;
+     transition: all 0.3s ease;
+
+}
+
+
+
+button{
+  
+}
+
+
+/* COOL BUTTONS */
+
